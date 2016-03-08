@@ -1,0 +1,323 @@
+<!--section id="holder">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a href="#" class="brand"></a>
+                <div class="collapse navbar-collapse nav-collapse">
+                <ul class="nav">
+                    <li class=""><a href="#">About Us</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    <div class="hero-unit">
+        <div class="hero-unit-inner text-center">
+            <h1> Guru is Within, Empower It.</h1>
+        </div>
+    </div><!-- End hero-unit-->
+    <!--/section-->
+<section id="holder">
+<nav class="navbar navbar-inverse">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand-2">
+                <a class="logo_1" href="#"></a>
+            </div>
+            <div class="navbar-brand">
+                <a class="logo" href="#"></a>
+            </div></div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class=""><a href="#">About Us</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#dialog-here">Register</a></li>
+
+            </ul>
+        </div>
+
+
+</nav>
+
+    <div class="hero-unit">
+        <div class="hero-unit-inner text-center" id="hero-unit-inner">
+            <div id="search">
+                <div class="row">
+                <form ng-submit="">
+                <div class="col-lg-8 col-lg-offset-2 col-md-12" id="main_search">
+                    <div class="searchbar col-md-10">
+                        <input type="text" name="search_string" id="search_string" placeholder="Enter Search String...">
+                    </div>
+                    <div class="find col-md-2">
+                        <button class="btn btn-primary btn-sm col-md-2 col-xs-2"><strong>Search</strong></button>
+                    </div>
+                </div>
+                    </form></div>
+            </div>
+            <img src="css/img/main_search.png" height="140px" width="140px" id="search_image" ng-click="activate_search()">
+            <h1 id="tag_line"> Guru is Within, Empower It.</h1>
+        </div>
+    </div><!-- End hero-unit-->
+</section>
+    <section id="status">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-xs-12 text-center">
+                <div class="statusHolder">
+                    <div class="col-xs-3">
+                    <div class="row"><h6>Likes</h6></div>
+                    <div class="row"> <img src="css/img/facebook.png"></div>
+                    <div class="row"><h2>0</h2></div>
+                        </div>
+            </div></div>
+            <div class="col-sm-3 col-xs-12 text-center">
+                <div class="statusHolder">
+                    <div class="col-xs-3">
+                    <div class="row"><h6>Followers</h6></div>
+                    <div class="row"> <img src="css/img/twitter.png"></div>
+                    <div class="row"><h2>0</h2></div>
+                        </div>
+            </div></div>
+            <div class="col-sm-3 col-xs-12 text-center">
+                <div class="statusHolder">
+                <div class="col-xs-3">
+                    <div class="row"><h6>Students</h6></div>
+                    <div class="row"> <img src="css/img/students.png"></div>
+                    <div class="row"><h2>0</h2></div>
+                </div>
+                </div></div>
+            <div class="col-sm-3 col-xs-12 text-center">
+                <div class="statusHolder">
+                    <div class="col-xs-3">
+                        <div class="row"><h6>Published Courses</h6></div>
+                        <div class="row"> <img src="css/img/courses.png"></div>
+                        <div class="row"><h2>0</h2></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+            </div>
+</section>
+<!-- End Holder-->
+
+<section id="process">
+    <div class="container">
+        <h1>How Does It Work?</h1>
+        <button class="processButton" ng-click="toggleView('student')" ng-init="toggleView('student')"><h3>Student</h3></button>
+        <button class="processButton" ng-click="toggleView('guru')"><h3>Educator</h3></button>
+        <div class="studentProcessImage text-center" ng-show="show=='studentProcessImage'">
+            <img src="images/studentProcess.png" class="text-center">
+        </div>
+        <div class="guruProcessImage" ng-show="show=='guruProcessImage'">
+            <img src="images/guruProcess.png" class="text-center">
+        </div>
+    </div>
+</section> <!-- End Process -->
+
+<section id="guide">
+    <div class="container">
+        <div class="row">
+          <h2>
+              <div class="col-md-2 col-xs-3 col-sm-3">
+                  <img src="css/img/icon1.png">
+              </div>
+              <div class="col-md-4 col-xs-9 col-sm-8 test">
+                <h2 class="header">How Does It Benefit?</h2>
+              </div>
+          </h2>
+        </div>
+        <div class="row benefits" ng-show="show=='guruProcessImage'">
+            <ul>
+                <li>Guru Publish courses to big audience with the click of Button.</li>
+                <li>Fill up classes quick.</li>
+                <li>Calendar that manages your schedule.</li>
+                <li>Broadcast messages to your class in a snap.</li>
+            </ul>
+        </div>
+        <div class="row benefits" ng-show="show=='studentProcessImage'">
+            <ul>
+                <li>Easy to find courses - one stop shop for all the courses one may need.</li>
+                <li>Apply to a course of your choice in a snap.</li>
+                <li>Know the details of the course like timing,location,teacher profile etc.</li>
+                <li>Calendar that manages your schedule.</li>
+                <li>All of the above done online, at your fingertips.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="bulletin">
+    <div class="container">
+        <div class="row">
+            <h1>Bulletin Board</h1>
+            <hr />
+        </div>
+
+        <div class="row sub-bulletin">
+           <div class="col-md-6 col-xs-12 bulletin">
+               <img src="css/img/bulletin2.png" class="bulletin-image">
+                <div class="bulletin-text">
+                   <h3 class="text-center">Title1</h3>
+                   <h5 class="text-center">Subtitle</h5>
+                    </div>
+
+           </div>
+
+            <div class="col-md-6 col-xs-12 bulletin">
+                <img src="css/img/bulletin2.png" class="bulletin-image">
+                <div class="bulletin-text">
+                    <h3 class="text-center">Title2</h3>
+                    <h5 class="text-center">Subtitle</h5>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row sub-bulletin">
+            <div class="col-md-4 col-xs-12 bulletin-new">
+                    <img src="css/img/bulletin3.png" class="bulletin-image-new">
+                    <div class=" bulletin-text text-center">
+                        <h3>Learning By Travel</h3>
+                        <h5>Subtitle</h5>
+                </div>
+            </div>
+
+            <div class="col-md-8 col-xs-12 bulletin bulletin-3">
+                <div class="text-center bulletin-text-new">
+                    <h3>Title3</h3>
+                    <h5>Subtitles</h5>
+                </div>
+            </div>
+
+            <div class="col-md-8 col-xs-12 bulletin-4">
+                <img src="css/img/bulletin4.png" class="bulletin-image">
+                <div class="bulletin-text">
+                    <h3 class="text-center">Title4</h3>
+                    <h5 class="text-center">Subtitle</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 text-center img-responsive">
+                <img src="css/img/load_icon.png">
+            </div>
+        </div>
+</div>
+</section>
+
+<section id="about_us">
+    <div class="container">
+        <div class="row">
+            <h1>About Us</h1>
+            <hr />
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <img src="css/img/about_us.png" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="row row-custom">
+
+                    <h3 class="text-center">A few words from the staff.</h3>
+                    <h5 class="text-center">We are the group of people who strongly believe that education is the single greatest tool for success and peace in the world. Access to education should be
+                    everyone's birthright and it should be affordable to everyone. Our goal is to provide everyone with Access to education without charge.</h5>
+                </div>
+                <div class="row row-custom">
+                    <h2>
+                    <div class="row">
+                    <div class="col-xs-2 col-md-1">
+                        <img src="css/img/address_icon.png">
+                    </div>
+                    <div class="col-md-5 col-xs-5">
+                        <h4>Address</h4>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs-2 col-md-1">
+                        <img src="css/img/admin_icon.png">
+                    </div>
+                    <div class="col-md-5 col-xs-5">
+                        <h4>Administration</h4>
+                    </div></div>
+                        <div class="row">
+                    <div class="col-xs-2 col-md-1">
+                        <img src="css/img/contact_icon.png">
+                    </div>
+                    <div class="col-md-5 col-xs-6">
+                        <h4>Contact Us</h4>
+                    </div></div></h2>
+                </div>
+
+                <div class="row row-custom">
+
+                    <h2>
+                        <div class="row">
+                       <div class="col-md-1 col-xs-2">
+                           <img src="css/img/social_icon.png">
+                       </div>
+                            <div class="col-md-3 col-xs-2 col-sm-2">
+                                <h4>Social Media</h4>
+                            </div>
+
+                            <div class="row">
+                            <div class="col-md-1 col-xs-2 col-md-offset-1 col-xs-offset-1">
+                                <img src="css/img/facebook_icon.png"></div>
+
+                            <div class="col-md-1 col-xs-2 ">
+                                <img src="css/img/twitter_icon.png"></div>
+
+                            <div class="col-md-1 col-xs-2 ">
+                                <img src="css/img/youtube_icon.png"></div>
+
+                            <div class="col-md-1 col-xs-2 col-xs-offset-1 col-md-pull-1">
+                                <img src="css/img/unknown_icon.png"></div>
+
+                            <div class="col-md-1 col-xs-2 col-md-pull-1">
+                                <img src="css/img/misc_icon.png"></div></div></div>
+                            </h2>
+                            </div>
+                    </h2>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="footer">
+    <div class="container">
+        <h2>
+    <div class="row">
+            <div class="col-md-4 col-xs-12 text">
+                <h4>&copy; Copyright Guru 2016</h4>
+            </div>
+            <div class="col-md-8 col-xs-8 col-xs-push-1 footer-image">
+                <img src="css/img/footer.png" class="img-responsive">
+            </div>
+    </div>
+            </h2>
+        </div>
+</section>
+
+
+
+
+
+<div  id="dialog-here">
+    <div>
+<p> here </p>
+    </div>
+</div>

@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'Museo';
+    src: url('fonts/Museo700.ttf') format('truetype');
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Museo', Rookwell, Serif;
+}
+.hero-unit{
+
+    padding:0px;
+    background: #222 url(img/hero_unit_1.png) no-repeat  top;
+    margin: 0px;
+    height: 600px;
+    border-radius: 0px;
+    background-size:cover;
+}
+
+#about_us .row-custom{
+    border-bottom: 1px solid grey;
+    padding:2%;
+    margin-bottom:10px;
+}
+#holder{
+
+}
+.navbar{
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 90px;
+    margin:0px;
+    padding:0px;
+    background-color: #151515;
+
+}
+.navbar-inverse{
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-color: #151515;
+    background-image: none;
+}
+
+.navbar-brand{
+    margin-left:45%;
+    position: absolute;
+    height:145px;
+    width:142px;
+    background: url(img/logo_container.png) no-repeat;
+}
+.navbar-brand-2{
+    background: url(img/logo_container.png) no-repeat;
+    margin-left:5%;
+    height:145px;
+    width:142px;
+    position:absolute;
+}
+.logo{
+    background:url(img/logo_1.png) no-repeat;
+    position: absolute;
+    width: 127px;
+    height: 127px;
+    margin-left:12%;
+    margin-top:15%;
+}
+.logo_1{
+    background:url(img/logo_1.png) no-repeat;
+    position: absolute;
+    width: 127px;
+    height: 127px;
+    margin-left:22%;
+    margin-top:25%;
+}
+
+.navbar .nav .a{
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: none;
+    color: white;
+}
+
+.navbar .nav{
+    padding-top:20px;
+    float:right;
+}
+
+
+
+.navbar .nav > li > a{
+    font-size: 16px;
+    text-shadow: none;
+    color: #ffffff;
+    padding-right:30px;
+    padding-left:30px;
+}
+
+.navbar .nav  > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus{
+    box-shadow: none;
+    background: rgba(0,0,0,0.2);
+}
+
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus{
+    background-color: rgba(104,105,198,0.7);
+}
+
+.hero-unit-inner {
+    padding-top:10%;
+    color: #ffffff;
+    border:none;
+}
+.hero-unit-inner h1{
+    font-size: 60px;
+}
+.hero-unit-inner img:hover{
+    transform: scale(1.1) rotate(360deg);
+    transition: .8s ease-in-out;
+}
+.hero-unit-inner img:active{
+    visibility: hidden;
+}
+#main_search{
+
+    visibility: hidden;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 6px;
+    padding: 12px;
+    text-align: center;
+    transform: scale(0.90);
+    transition: transform 0.8s ease-in 0s;
+}
+
+#main_search input{
+   height:60px;
+    width:100%;
+    border:1px solid #ececec;
+    color:#000;
+    padding-left:20px;
+}
+
+#main_search button{
+    float:left;
+    padding:20px;
+    width:100%;
+    margin: 0px;
+    background: rgb(104,105,197);
+    border-radius: 0px;
+}
+.container .span3{
+    margin:0px;
+}
+
+#status{
+    height:200px;
+    background:#151515;
+    color:#ffffff;
+}
+
+#status .container {
+    margin-left: 15%;
+}
+
+.statusHolder{
+    padding-top:20px;
+}
+
+.material-icons{
+    position: absolute;
+    margin-left:-70px;
+    float:right;
+    font-size: 50px;
+}
+#status h2,#status h5{
+    position:relative;
+
+}
+
+#process{
+    padding:10px;
+}
+#process img{
+    width:100%;
+    height:100%;
+    align-content: center;
+}
+.processButton{
+    background: transparent;
+    font-size: 16px;
+    text-shadow: none;
+    color: gray;
+    margin-bottom:20px;
+    margin-right:20px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom: 10px;
+    border:none;
+}
+.processButton:focus, .processButton:hover, .processButton:link{
+    background-color: rgba(124,125,198,0.7);
+    border:none;
+    color:#ffffff;
+}
+
+#guide{
+    background:#151515;
+    color: #ffffff;
+    margin-bottom:30px;
+    padding-bottom:20px;
+}
+
+#guide .span8{
+    margin:0px;
+    padding:0px;
+}
+#guide .header{
+    color: #7677D4;
+    margin-top:5%;
+}
+
+@media screen and (min-width: 1030px){
+    #guide img{
+        float: right;
+    }
+    #bulletin{
+        margin-left:4%;
+    }
+}
+@media screen and (max-width: 979px){
+    #guide img{
+        padding-left:40%;
+    }
+    #guide .header{
+        padding-left:20%;
+    }
+   #status .container{
+       margin-left:auto;
+   }
+}
+
+#guide .benefits{
+    padding-top:2%;
+    margin-left:5%;
+}
+
+.sub-bulletin{
+    width:100%;
+    height: auto;
+}
+#bulletin .bulletin, #bulletin .bulletin-4{
+    background-color: #151515;
+    color:#ffffff;
+    height:300px;
+    padding:0px;
+    margin-bottom:2px;
+}
+
+.bulletin img{
+    float:left;
+}
+
+.bulletin-4 img{
+    float:right;
+}
+
+#bulletin .bulletin-new{
+    background-color: #7677D4;
+    height:600px;
+    width:372px;
+    color:#ffffff;
+    padding:0px;
+    margin-right: 2px;
+}
+#bulletin .bulletin-text-new{
+    background-color: #151515;
+    height: 270px;
+    color:#ffffff;
+}
+@media screen and (max-width: 979px){
+
+}
+.sub-bulletin .bulletin-image{
+    background-image: url(img/bulletin2.png);
+    width:270px;
+    height: 300px;
+}
+
+#footer{
+    background-color: #151515;
+    height: 100px;
+    color:#ffffff;
+}
+#footer img{
+    float:right;
+}
+
+@media screen and (max-width: 768px){
+    #status{
+        height: 800px;
+    }
+    #footer .text{
+        text-align: center;
+    }
+
+
+    #status .container{
+
+    }
+
+}
+
+@media screen and (min-width: 979px){
+    .navbar-brand-2{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 979px){
+    .hero-unit{
+        width:100%;
+        height:100%;
+    }
+    .hero-unit-inner{
+        padding-top:10%;
+    }
+    .hero-unit-inner h1{
+        font-size: 30px;
+    }
+    .navbar-brand{
+        visibility: hidden;
+    }
+    .logo{
+        visibility: hidden;
+    }
+    .navbar-brand-2{
+        visibility: visible;
+    }
+    .logo_1{
+        visibility: visible;
+    }
+
+
+    .statusHolder .col-xs-3{
+        margin-left: 35%;
+        margin-right: auto;
+    }
+
+    #process h1{
+       font-size:30px;
+    }
+    #guide h2{
+        font-size:20px;
+    }
+    #guide .test{
+        margin-left:-12%;
+    }
+    #guide img{
+        width:100%;
+        height:100%;
+    }
+    #bulletin .bulletin-image{
+        width:50%;
+        height:100%;
+    }
+    #bulletin .bulletin-new{
+        width:100%;
+    }
+    #bulletin .bulletin-image-new{
+        width:100%;
+        height:50%;
+    }
+    #footer .footer-image{
+        float:left;
+        padding-left:20%;
+    }
+
+
+}
